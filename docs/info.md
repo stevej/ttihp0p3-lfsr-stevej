@@ -9,12 +9,13 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-This project is a Linear Feedback`uo_out` contains a unique set of bits every time
+Read the `ui_out` pins, each read should be different than the last.
+To reset the shift register, reset the chip, or set the 'write_enable' pin high after offering a value on `ui_in` as a seed.
 
 ## How to test
 
-Explain how to use your project
+Read several bytes from `ui_in`, they should each be different.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+No external hardware needed other than to read the pins.
